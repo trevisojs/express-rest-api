@@ -1,0 +1,13 @@
+{% extends 'layout.html' %}
+
+{% block title %}{{ hacker.name }}{% endblock %}
+
+{% block content %}
+    <h2>Hacker details:</h2>
+    <dl>
+        <dt>Name</dt>
+        <dd>{{ hacker.name }}</dd>
+        <dt>Alias</dt>
+        <dd>{{ hacker.alias }}</dd>
+    </dl>
+{% endblock %}

@@ -1,0 +1,11 @@
+{% extends 'layout.html' %}
+
+{% block title %}Hackers{% endblock %}
+
+{% block content %}
+    <ul>
+        {% for hacker in hackers %}
+            <li><a href="/hackers/{{ hacker.name }}">{{ hacker.name }}</a></li>
+        {% endfor %}
+    </ul>
+{% endblock %}
